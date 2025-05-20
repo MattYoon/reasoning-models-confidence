@@ -1,11 +1,12 @@
 # Reasoning Models Better Express Their Confidence
 
 ### Summary
-🙁 LLMs are often overconfident--even when they're wrong. They struggle to express their confidence accurately in their output.
+🙁 LLMs are often overconfident—even when they're wrong. So they struggle to express their confidence accurately in their output.
 
 🧐 What about *reasoning models?* Do their slow thinking process help them "know what they know"?
 
-❗️ We find that reasoning models can *dynamically* refine their confidence during CoT (figure below), which leads to superior confidence calibration.
+❗️ We find that reasoning models can dynamically adjust their confidence during CoT, unlike non-reasoning models, which leads to superior confidence calibration.
+
 
 <div align="center">
 <img src="figure1.png" alt="figure1" width="600"/>
@@ -20,7 +21,7 @@ pip install -e evalchemy
 pip install vllm
 ```
 
-## Main Experiment (Section 3)
+## Section 3: Main Experiment
 
 1. For **reasoning models** that reliably generate "Confidence Reasoning":
 ```
@@ -40,8 +41,8 @@ bash evalchemy/scripts/non_reasoning.sh
 4. Finally, use the notebook `results/calculate_metrics.ipynb` to calculate ECE, Brier Score, and AUROC for the outputs.
 
 ---
-## Analysis (Section 4)
-### Linear Regression (Section 4.1)
+## Section 4: Analysis
+### Section 4.1: Linear Regression
 1. For **reasoning models**:
 ```
 bash evalchemy/reasoning_slope.sh
@@ -51,9 +52,45 @@ bash evalchemy/reasoning_slope.sh
 ```
 bash evalchemy/non_reasoning_slope.sh
 ```
+
+3. Finally, use the notebook `results/linear_regression.ipynb` to run linear regression on the calibration metrics.
+
+**Change the dataset path and the model name appropriately referring to the list below.**
+
 <details>
   <summary>Paths to the segmented CoTs</summary>
 
+  <b>Reasoning Models</b>  
+  - DKYoon/qwen3-think-nonambigqa-slope  
+  - DKYoon/qwen3-think-triviaqa-slope  
+  - DKYoon/r1-nonambigqa-slope  
+  - DKYoon/r1-triviaqa-slope  
+  - DKYoon/exaone-deep-nonambigqa-slope  
+  - DKYoon/exaone-deep-triviaqa-slope  
+  - DKYoon/glm-z1-nonambigqa-slope  
+  - DKYoon/glm-z1-triviaqa-slope  
+
+
+  <b>Non-Reasoning Models</b>  
+  - DKYoon/qwen3-non-think-nonambigqa-slope  
+  - DKYoon/qwen3-nonthink-triviaqa-slope  
+  - DKYoon/glm-instruct-nonambigqa-slope  
+  - DKYoon/glm-instruct-triviaqa-slope  
+  - DKYoon/exaone-instruct-nonambigqa-slope  
+  - DKYoon/exaone-instruct-triviaqa-slope  
+  - DKYoon/qwen25-nonambigqa-slope  
+  - DKYoon/qwen25-triviaqa-slope  
 </details>
 
+### Section 4.2: Ablation
+```
+bash evalchemy/reasoning_ablations.sh
+```
 
+The code used to create the ablated CoTs are available in `ablation_data/`.
+
+### Section 4.3: In-context Slow Thinking
+```
+bash evalchemy/non_reasoning_slow_think.sh
+```
+The few-shot slow thinking examples are available in `evalchemy/eval/chat_benchmarks/non_reasoning_slow_think/few_shot_prompt.py`

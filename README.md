@@ -94,3 +94,6 @@ The code used to create the ablated CoTs are available in `ablation_data/`.
 bash evalchemy/non_reasoning_slow_think.sh
 ```
 The few-shot slow thinking examples are available in `evalchemy/eval/chat_benchmarks/non_reasoning_slow_think/few_shot_prompt.py`
+
+---
+## Citation

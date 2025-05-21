@@ -3,12 +3,11 @@
 [[paper]](https://arxiv.org/abs/2505.14489)
 
 ### Summary
-🙁 LLMs are often overconfident—even when they're wrong. So they struggle to express their confidence accurately in their output.
+🙁 LLMs are overconfident even when they are dead wrong. 
 
-🧐 What about *reasoning models?* Do their slow thinking process help them "know what they know"?
+🧐 What about reasoning models? Can they actually tell us “My answer is only 60% likely to be correct”?
 
-❗️ We find that reasoning models can dynamically adjust their confidence during CoT, unlike non-reasoning models, which leads to superior confidence calibration.
-
+❗Our paper suggests that they can! Through extensive analysis, we investigate what enables this emergent ability.
 
 <div align="center">
 <img src="figure1.png" alt="figure1" width="600"/>

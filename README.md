@@ -1,5 +1,7 @@
 # Reasoning Models Better Express Their Confidence
 
+[[paper]](https://arxiv.org/abs/2505.14489)
+
 ### Summary
 🙁 LLMs are often overconfident—even when they're wrong. So they struggle to express their confidence accurately in their output.
 
@@ -97,3 +99,15 @@ The few-shot slow thinking examples are available in `evalchemy/eval/chat_benchm
 
 ---
 ## Citation
+```
+@misc{yoon2025reasoningmodelsbetterexpress,
+      title={Reasoning Models Better Express Their Confidence}, 
+      author={Dongkeun Yoon and Seungone Kim and Sohee Yang and Sunkyoung Kim and Soyeon Kim and Yongil Kim and Eunbi Choi and Yireun Kim and Minjoon Seo},
+      year={2025},
+      eprint={2505.14489},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2505.14489}, 
+}
+```
+

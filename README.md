@@ -1,6 +1,7 @@
 # Reasoning Models Better Express Their Confidence
 
 [[paper]](https://arxiv.org/abs/2505.14489)
+[[tweet (breif overview of the paper)]](https://x.com/dongkeun_yoon/status/1925181877398438068)
 
 ### Summary
 🙁 LLMs are overconfident even when they are dead wrong. 

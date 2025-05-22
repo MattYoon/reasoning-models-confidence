@@ -1,6 +1,7 @@
 # Reasoning Models Better Express Their Confidence
 
 [[paper]](https://arxiv.org/abs/2505.14489)
+
 [[tweet (breif overview of the paper)]](https://x.com/dongkeun_yoon/status/1925181877398438068)
 
 ### Summary
@@ -75,7 +76,7 @@ bash evalchemy/non_reasoning_slope.sh
 
   <b>Non-Reasoning Models</b>  
   - DKYoon/qwen3-non-think-nonambigqa-slope  
-  - DKYoon/qwen3-nonthink-triviaqa-slope  
+  - DKYoon/qwen3-non-think-triviaqa-slope  
   - DKYoon/glm-instruct-nonambigqa-slope  
   - DKYoon/glm-instruct-triviaqa-slope  
   - DKYoon/exaone-instruct-nonambigqa-slope  

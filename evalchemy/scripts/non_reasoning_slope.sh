@@ -3,10 +3,6 @@ export CUDA_VISIBLE_DEVICES=2,3
 export VLLM_USE_V1=0
 export VLLM_WORKER_MULTIPROC_METHOD=spawn
 
-export HF_HOME=/mnt/nas/dongkeun/huggingface
-export TRANSFORMERS_CACHE=/mnt/nas/dongkeun/huggingface
-
-
 export DS_SIZE=1000
 
 export DS_PATH=DKYoon/qwen25-triviaqa-slope

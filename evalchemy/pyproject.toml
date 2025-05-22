@@ -94,7 +94,6 @@ dependencies = [
     "tree_sitter",
     "asttokens",
     "mypy_extensions",
-    "pyext@git+https://github.com/penfever/PyExt",
     
     # Web & API
     "fastapi>=0.101.0",

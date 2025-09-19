@@ -1,4 +1,4 @@
-# Reasoning Models Better Express Their Confidence
+# [NeurIPS 2025] Reasoning Models Better Express Their Confidence
 
 [[paper]](https://arxiv.org/abs/2505.14489)
 
